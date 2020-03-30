@@ -2,9 +2,6 @@
 #include <string.h>
 #define CAP 5
 
-typedef struct donador donador;
-typedef enum tipoSangre tipoSangre;
-
 struct donador{
     char nombre[21];
     int edad;
@@ -13,6 +10,10 @@ struct donador{
 enum tipoSangre{
     AP, AN, BP, BN, ABP, ABN, OP, ON 
 };
+
+typedef struct donador donador;
+typedef enum tipoSangre tipoSangre;
+
 
 //Funcion que permite agregar un donador
 void agregarDonador(donador matriz[][CAP], int lista);
