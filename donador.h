@@ -15,10 +15,10 @@ enum tipoSangre{
 };
 
 //Funcion que permite agregar un donador
-void agregarDonador(donador matriz[][CAP], int lista);
+void agregarDonador(donador matriz[][CAP], int lista[]);
 
 //Funcion que muestra las personas con un tipo de sangre
-void mostrarTipoSangre(donador matriz[][CAP], int lista);
+void mostrarTipoSangre(donador matriz[][CAP], int lista[]);
 
 //funcion que muestra las personas a las que le puede donar alguien
-void mostrarDonables(donador matriz[][CAP], int lista);
+void mostrarDonables(donador matriz[][CAP], int lista[]);
