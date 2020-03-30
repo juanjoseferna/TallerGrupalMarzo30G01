@@ -19,6 +19,8 @@ typedef enum tipoSangre tipoSangre;
 void agregarDonador(donador matriz[][CAP], int lista);
 
 //Funcion que muestra las personas con un tipo de sangre
+//Mensaje para Jose: Tu funcion no debería tener un parametro que especifique
+//El tipo de Sangre?
 void mostrarTipoSangre(donador matriz[][CAP], int lista);
 
 //funcion que muestra las personas a las que le puede donar alguien
