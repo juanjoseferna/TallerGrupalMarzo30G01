@@ -18,7 +18,7 @@ typedef enum tipoSangre tipoSangre;
 void agregarDonador(donador matriz[][CAP], int lista[]);
 
 //Funcion que muestra las personas con un tipo de sangre
-void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tiposSangre);
+void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tipoSangre);
 
 //funcion que muestra las personas a las que le puede donar alguien
 void mostrarDonables(donador matriz[][CAP], int lista[]);

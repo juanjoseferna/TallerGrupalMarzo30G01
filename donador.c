@@ -32,7 +32,7 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
     }
 }
 
-void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tiposSangre)
+void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tipoSangre)
 {
     int i;
     for (i = 0; i < lista[tipoSangre]; i++)
