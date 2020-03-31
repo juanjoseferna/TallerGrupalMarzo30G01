@@ -32,12 +32,76 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
     }
 }
 
-void mostrarTipoSangre(donador matriz[][CAP], int lista[], int tipoSangre)
+void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tiposSangre)
 {
     int i;
     for (i = 0; i < lista[tipoSangre]; i++)
     {
-       donador d = matriz[tipoSangre][i];
-        printf("Nombre del donador: %s\n Edad: %d\n", d.nombre, d.edad); 
+        donador d = matriz[tipoSangre][i];
+        printf("Nombre del donador: %s\n Edad: %d\n", d.nombre, d.edad);   
+    }
+}
+
+void mostrarDonables(donador matriz[][CAP], int lista[]){
+
+    tipoSangre donante;
+
+    printf("Ingrese su tipo de sangre:\n> ");
+    scanf("%d", &donante);
+
+    switch(donante){
+        case AP:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, AP);
+            mostrarTipoSangre(matriz, lista, ABP);
+            break;
+        case AN:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, AP);
+            mostrarTipoSangre(matriz, lista, AN);
+            mostrarTipoSangre(matriz, lista, ABP);
+            mostrarTipoSangre(matriz, lista, ABN);
+            break;
+        case BP:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, BP);
+            mostrarTipoSangre(matriz, lista, ABP);
+            break;
+        case BN:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, BP);
+            mostrarTipoSangre(matriz, lista, BN);
+            mostrarTipoSangre(matriz, lista, ABP);
+            mostrarTipoSangre(matriz, lista, ABN);
+            break;
+        case ABP:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, ABP);
+            break;
+        case ABN:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, ABP);
+            mostrarTipoSangre(matriz, lista, ABN);
+            break;
+        case OP:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, AP);
+            mostrarTipoSangre(matriz, lista, BP);
+            mostrarTipoSangre(matriz, lista, ABP);
+            mostrarTipoSangre(matriz, lista, OP);
+            break;
+        case ON:
+            printf("Le puedes donar a las siguientes personas:\n");
+            mostrarTipoSangre(matriz, lista, AP);
+            mostrarTipoSangre(matriz, lista, AN);
+            mostrarTipoSangre(matriz, lista, BP);
+            mostrarTipoSangre(matriz, lista, BN);
+            mostrarTipoSangre(matriz, lista, ABP);
+            mostrarTipoSangre(matriz, lista, ABN);
+            mostrarTipoSangre(matriz, lista, OP);
+            mostrarTipoSangre(matriz, lista, OP);
+            break;
+        default:
+            printf("Tipo de sangre invalido.\n");
     }
 }
