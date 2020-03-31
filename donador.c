@@ -32,9 +32,10 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
     }
 }
 
-void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tipoSangre)
+void mostrarTipoSangre(donador matriz[][CAP], int lista[], int tipoSangre)
 {
     int i;
+    printf("%d", tipoSangre);
     for (i = 0; i < lista[tipoSangre]; i++)
     {
         donador d = matriz[tipoSangre][i];
@@ -46,8 +47,10 @@ void mostrarDonables(donador matriz[][CAP], int lista[]){
 
     tipoSangre donante;
 
+    printf("1. AP \n 2. AN \n 3. BP \n 4. BN \n 5. ABP \n"
+		" 6. ABN \n 7. OP \n 8. ON\n");
     printf("Ingrese su tipo de sangre:\n> ");
-    scanf("%d", &donante);
+    scanf("%d", &donante); donante--;
 
     switch(donante){
         case AP:
