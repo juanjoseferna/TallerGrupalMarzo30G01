@@ -1,6 +1,6 @@
 #include "donador.h"
 
-void agregarDonador(donador matriz[][CAP], int lista){
+void agregarDonador(donador matriz[][CAP], int lista[]){
     int tipo;
     printf("\nEscoga su tipo de sangre\n");
     printf("1. A+\n");
@@ -11,5 +11,23 @@ void agregarDonador(donador matriz[][CAP], int lista){
     printf("6. AB-\n");
     printf("7. O+\n");
     printf("8. O-\n");
+    printf("Tipo: ");
     scanf("%d", &tipo);
+    tipo--;
+    if(tipo >= 0 && tipo <= 7){
+        if(lista[tipo] != 5){
+            printf("Nombre: ");
+            scanf("%s", matriz[tipo][lista[tipo]].nombre);
+            printf("Edad: ");
+            scanf("%d", &matriz[tipo][lista[tipo]].edad);
+            lista[tipo]++;
+            printf("Persona agregada exitosamente\n");
+        }
+        else{
+            printf("No hay cupo\n");
+        }
+    }
+    else{
+        printf("Opción invalida\n");
+    }
 }
