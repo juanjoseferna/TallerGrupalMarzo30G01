@@ -24,6 +24,9 @@ int menu (donador matriz[][CAP], int lista[]){
 	}
 	else if (opc == 0){
 		return 0;
+	} else {
+		printf("Opcion incorrecta");
+		menu(matriz,lista);
 	}
 }
 
