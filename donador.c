@@ -13,7 +13,7 @@ void mostrarTipoSangre(donador matriz[][CAP], int lista[])
     }
 }
 
-void mostrarDonables(donador matriz[][CAP], int lista){
+void mostrarDonables(donador matriz[][CAP]){
 
     tipoSangre donante;
 
