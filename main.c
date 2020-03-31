@@ -32,7 +32,7 @@ int menu (donador matriz[][CAP], int lista[]){
 
 int main(){
 	donador matriz[8][CAP];
-	int lista[8];	
+	int lista[8] = {0};	
 	menu(matriz,lista);
 	return 0;
 }
