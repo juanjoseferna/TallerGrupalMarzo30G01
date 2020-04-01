@@ -2,7 +2,7 @@
 
 int menu (donador matriz[][CAP], int lista[]){
 	int opc;
-	printf("Bienvenido, eliga la opcion que desee \n 1. Agregar nuevo donador \n "
+	printf("Bienvenido, elija la opcion que desee \n 1. Agregar nuevo donador \n "
 		"2. Mostrar lo donadores por tipo de sangre \n 3. Mostrar personas a quienes puedes donar\n "
 		"0. para salir \n");
 	scanf("%i", &opc);
