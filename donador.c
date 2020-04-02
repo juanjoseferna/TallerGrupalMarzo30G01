@@ -2,7 +2,7 @@
 
 void agregarDonador(donador matriz[][CAP], int lista[]){
     int tipo;
-    printf("\nEscoga su tipo de sangre\n");
+    printf("\nEscoja su tipo de sangre\n");
     printf("1. A+\n");
     printf("2. A-\n");
     printf("3. B+\n");
@@ -28,7 +28,7 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
         }
     }
     else{
-        printf("Opción invalida\n");
+        printf("Opcion invalida\n");
     }
 }
 
