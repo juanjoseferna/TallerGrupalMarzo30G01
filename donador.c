@@ -17,7 +17,7 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
     if(tipo >= 0 && tipo <= 7){
         if(lista[tipo] != 5){
             printf("Nombre: ");
-            scanf("%s", matriz[tipo][lista[tipo]].nombre);
+            scanf("%20s", matriz[tipo][lista[tipo]].nombre);
             printf("Edad: ");
             scanf("%d", &matriz[tipo][lista[tipo]].edad);
             lista[tipo]++;
