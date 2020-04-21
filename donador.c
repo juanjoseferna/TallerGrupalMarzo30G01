@@ -14,8 +14,8 @@ void agregarDonador(donador matriz[][CAP], int lista[]){
     printf("Tipo: ");
     scanf("%d", &tipo);
     tipo--;
-    if(tipo >= 0 && tipo <= 7){
-        if(lista[tipo] != 5){
+    if(tipo >= 0 && tipo <= 7){ // Numeros mágicos
+        if(lista[tipo] != 5){// Numeros mágicos
             printf("Nombre: ");
             scanf("%20s", matriz[tipo][lista[tipo]].nombre);
             printf("Edad: ");
@@ -38,6 +38,7 @@ void mostrarTipoSangre(donador matriz[][CAP], int lista[], tipoSangre tipoSangre
     
     for (i = 0; i < lista[tipoSangre]; i++)
     {
+        // Me gustaría que la variable tuviera un nombre mejor a d
         donador d = matriz[tipoSangre][i];
         printf("Nombre: %s\n Edad: %d\n", d.nombre, d.edad);   
     }
@@ -52,6 +53,7 @@ void mostrarDonables(donador matriz[][CAP], int lista[]){
     printf("Ingrese su tipo de sangre:\n> ");
     scanf("%d", &donante); donante--;
 
+    // Muy buen uso de enums
     switch(donante){
         case AP:
             printf("Le puedes donar a las siguientes personas con tipo de Sangre AP:\n");

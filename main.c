@@ -27,6 +27,8 @@ int menu (donador matriz[][CAP], int lista[]){
 		return 0;
 	} else {
 		printf("Opcion incorrecta");
+
+		// Por lo que explique en clase este llamado "recursivo"  no es adecuado
 		menu(matriz,lista);
 	}
 }
